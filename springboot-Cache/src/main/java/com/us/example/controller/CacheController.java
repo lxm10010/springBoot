@@ -46,13 +46,9 @@ public class CacheController {
         return new Person();
     }
 
-    @RequestMapping("/put5")
-    public Person put5(){
-        return new Person();
-    }
-
     @RequestMapping("/put6")
     public Person put6(Person person){
+        int i=0;
         return demoService.save(person);
     }
 
