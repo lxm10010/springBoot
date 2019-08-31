@@ -29,6 +29,18 @@ public class CacheController {
         return demoService.save(person);
     }
 
+    //http://localhost:8080/put?name=abel&age=23&address=shanghai
+    @RequestMapping("/put3")
+    public Person put3(Person person){
+        return demoService.save(person);
+    }
+
+    //http://localhost:8080/put?name=abel&age=23&address=shanghai
+    @RequestMapping("/put4")
+    public Person put4(Person person){
+        return demoService.save(person);
+    }
+
     //http://localhost:8080/able?id=1
     @RequestMapping("/able")
     @ResponseBody
