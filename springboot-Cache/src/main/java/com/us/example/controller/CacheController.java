@@ -39,20 +39,15 @@ public class CacheController {
     public Person put4(Person person){
         return demoService.save(person);
     }
-    //http://localhost:8080/put?name=abel&age=23&address=shanghai
     @RequestMapping("/put5")
     public Person put5(){
         int i=0;
         return new Person();
     }
 
-    @RequestMapping("/put5")
-    public Person put5(){
-        return new Person();
-    }
-
     @RequestMapping("/put6")
     public Person put6(Person person){
+        int i=1;
         return demoService.save(person);
     }
 
