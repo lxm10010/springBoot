@@ -48,7 +48,7 @@ public class CacheController {
 
     @RequestMapping("/put6")
     public Person put6(Person person){
-        int i=0;
+        int i=0; //
         return demoService.save(person);
     }
 
